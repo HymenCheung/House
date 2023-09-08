@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.component 用法</title>
+  <script src="https://unpkg.com/vue@next"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.global.min.js"></script> -->
+</head>
+<body>
+  <div id="root">
+    <Test :msg="message"></Test>
+  </div>
+  <script>
+    const Test = {
+      template: '<div>{{msg}}</div>',
+      props: {
+        msg: {
+          type: String,
+          default: 'default message'
+        }
+      }
+    };
+
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Test Component"
+        };
+      }
+    });
+
+    app.component('Test', Test);
+
+    app.mount('#root');
+  </script>
+</body>
+</html>

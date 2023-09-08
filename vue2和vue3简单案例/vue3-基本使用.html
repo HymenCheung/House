@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js CDN 示例</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.global.min.js"></script>
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: 'Hello, Vue.js!'
+        };
+      }
+    });
+
+    app.mount('#app');
+  </script>
+</body>
+</html>
