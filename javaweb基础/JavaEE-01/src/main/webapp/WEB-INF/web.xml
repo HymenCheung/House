@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         https://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID" version="4.0">
+
+
+
+<!--    <servlet>-->
+<!--        <servlet-name>hello</servlet-name>-->
+<!--&lt;!&ndash;        根据hello可以找到这个全类名  创建出这个对象 调用里面的service方法&ndash;&gt;-->
+<!--        <servlet-class>com.atstudy.HelloServlet</servlet-class>-->
+<!--    </servlet>-->
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>hello</servlet-name>-->
+<!--&lt;!&ndash;        再浏览器中输入这个url可以找到hello&ndash;&gt;-->
+<!--        <url-pattern>/hello</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+</web-app>

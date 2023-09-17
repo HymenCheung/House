@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ADJF36-JavaEE.iml" filepath="$PROJECT_DIR$/ADJF36-JavaEE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaEE-01/JavaEE-01.iml" filepath="$PROJECT_DIR$/JavaEE-01/JavaEE-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyServlet/MyServlet.iml" filepath="$PROJECT_DIR$/MyServlet/MyServlet.iml" />
+    </modules>
+  </component>
+</project>

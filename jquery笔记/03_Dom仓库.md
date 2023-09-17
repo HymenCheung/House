@@ -84,6 +84,8 @@
 
 ​        JQuery.each( Function callback )    迭代遍历JQuery对象Dom仓库中的每一个Dom对象
 
+这个index是遍历到的dom对象的索引，而dom就是遍历到的dom对象
+
 ```html
 <!DOCTYPE html>
 <html>

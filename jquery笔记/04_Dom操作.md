@@ -2,9 +2,9 @@
 
 ### 一：JQuery.attr()
 
-JQuery.attr( String name )                    获取dom属性的文档值
+JQuery.attr( String name )                    获取dom属性的文档值（无法获取innerText值即标签值）
 
-JQuery.attr( String name,Value value )    设置dom属性的文档值
+JQuery.attr( String name,Value value )    设置dom属性的文档值（无法设置innerText值）
 
 JQuery.attr( Object json )                    设置多个dom属性的文档值
 
@@ -41,6 +41,12 @@ JQuery.prop( String name )            获取一个dom属性的当前值，状态
 JQuery.prop( String name , Boolean value )    设置一个dom属性的当前值
 
 JQuery.prop( Object json )            设置多个dom属性的当前值值
+
+
+
+.prop与.attr的区别
+
+用户在浏览器中修改值，会将prop属性中的值一并修改，而attr获取到的还是原来的值
 
 ```html
 <!DOCTYPE html>
@@ -185,11 +191,11 @@ JQuery.css( Object json )                            设置Dom对象的多个css
 
 ### 七：内部追加
 
-JQuery.append( Object JQuery )            内部内容后追加
+JQuery1.append( Object JQuery2 )            内部内容后追加   Jquery2追加到Jquery1后面
 
 JQuery.prepend( Object JQuery )             内部内容前追加
 
-JQuery.appendTo( Object JQuery )        追加到目标内部内容后
+JQuery1.appendTo( Object JQuery2 )        追加到目标内部内容后     Jquery1追加到Jquery2后面
 
 JQuery.prependTo( Object JQuery )        追加到目标内部内容前
 
@@ -226,11 +232,11 @@ JQuery.prependTo( Object JQuery )        追加到目标内部内容前
 
 ### 八：外部追加
 
-JQuery.after( Object jquery )            外部后追加
+JQuery1.after( Object jquery2 )            外部后追加   Jquery2追加到Jquery1后面
 
 JQuery.before( Object jquery )        外部前追加
 
-JQuery.insertAfter( Object jquery )        追加到目标外部后方
+JQuery1.insertAfter( Object jquery2 )        追加到目标外部后方   Jquery2追加到Jquery1后面
 
 JQuery.insertBefore( Object jquery )    追加到目标外部前方
 
@@ -267,9 +273,9 @@ JQuery.insertBefore( Object jquery )    追加到目标外部前方
 
 ### 九：替换
 
-JQuery.replaceWith( Object jquery )    替换为
+JQuery1.replaceWith( Object jquery2 )    替换为 Jquery2替换1，Jquery1会消失
 
-JQuery.replaceAll( Object jquery )        替换目标
+JQuery1.replaceAll( Object jquery2 )        替换目标   Jquery1替换2，Jquery2会消失
 
 ```html
 <!DOCTYPE html>
@@ -296,9 +302,9 @@ JQuery.replaceAll( Object jquery )        替换目标
 
 ### 十：删除
 
-JQuery.empty()    清空内部内容
+JQuery.empty()    清空内部内容		//不会删除标记本身
 
-JQuery.remove()    删除Dom对象
+JQuery.remove()    删除Dom对象	//清楚内部内容并且会将标记本身一并删除
 
 ```html
 <!DOCTYPE html>
